@@ -10,7 +10,7 @@ import com.google.firebase.storage.FirebaseStorage
 class MainViewModel (var promptService : IPromptService) : ViewModel(){
 
     //Variables
-    var prompts = promptService.getPromptDAO().getPrompts()
+    var prompts = promptService.getLocalPromptDAO().getPrompts()
 
 
     //Firebase
@@ -22,6 +22,7 @@ class MainViewModel (var promptService : IPromptService) : ViewModel(){
 
     //Fetch Prompts
     //Get prompt from array list and present it to the user
+    //ADD FUNCTION HEREEREERE
 
     //Left Button
     //Program searches through list for corresponding number and everything loops

@@ -6,17 +6,11 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import app.DTO.Prompt
+import java.util.ArrayList
 
-@Dao
+
 interface ILocalPromptDAO {
-
-    //@Query("SELECT * FROM prompts")
-    fun getAllPlants() : LiveData<List<Prompt>>
-
-
-    //I want to change this to store the users data when they save
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(plants: ArrayList<Prompt>)
+    fun insertAll(prompts: ArrayList<Prompt>)
     abstract fun getPrompts(): Any
 
 }
