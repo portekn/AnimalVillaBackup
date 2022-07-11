@@ -1,7 +1,7 @@
 package app
 
 import android.app.Application
-import com.example.animalvilla.BuildConfig
+import app.AnimalVilla.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext

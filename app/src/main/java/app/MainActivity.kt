@@ -2,7 +2,7 @@ package app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.animalvilla.R
+import app.AnimalVilla.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
